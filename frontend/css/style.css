@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #87CEEB;
+    text-align: center;
+}
+
+.game-container {
+    padding-top: 30px;
+}
+
+.game-container h1 {
+    margin-bottom: 20px;
+}
+
+.game {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background: linear-gradient(
+        to bottom,
+        #87CEEB 0%,
+        #87CEEB 70%,
+        #5DBB63 70%,
+        #5DBB63 100%
+    );
+
+    border: 4px solid #222;
+    position: relative;
+    overflow: hidden;
+}
+
+.mario {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
