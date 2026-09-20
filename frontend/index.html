@@ -1,23 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo do Mario</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jogo Mario</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
 </head>
+
 
 <body>
 
     <main class="game-container">
-        <h1>Jogo do Mario</h1>
+
+        <h1>Jogo Mario</h1>
+
 
         <div class="game">
-            <div class="mario"></div>
+
+            <!-- PLACAR -->
+
+            <div class="score-board">
+
+                <span>
+                    PONTOS:
+                    <strong id="score">00000</strong>
+                </span>
+
+                <span>
+                    RECORDE:
+                    <strong id="high-score">00000</strong>
+                </span>
+
+            </div>
+
+
+            <!-- MENSAGEM INICIAL -->
+
+            <div
+                class="message"
+                id="start-message"
+            >
+
+                <h2>Jogo Mario</h2>
+
+                <p>
+                    Pressione ESPAÇO para começar
+                </p>
+
+            </div>
+
+
+            <!-- MENSAGEM GAME OVER -->
+
+            <div
+                class="message game-over"
+                id="game-over"
+            >
+
+                <h2>GAME OVER</h2>
+
+                <p>
+                    Pressione ESPAÇO para jogar novamente
+                </p>
+
+            </div>
+
+
+            <!-- MARIO -->
+
+            <img
+                src="assets/mario.png"
+                class="mario"
+                id="mario"
+                alt="Mario"
+            >
+
+
+            <!-- CHÃO -->
+
+            <div class="ground"></div>
+
+
+            <!-- OBSTÁCULOS -->
+
+            <div
+                class="obstacle obstacle-1"
+            ></div>
+
+            <div
+                class="obstacle obstacle-2"
+            ></div>
+
+            <div
+                class="obstacle obstacle-3"
+            ></div>
+
         </div>
+
+
+        <p class="instructions">
+
+            ESPAÇO = Pular
+
+        </p>
+
     </main>
 
+
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
